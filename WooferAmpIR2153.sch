@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -54,7 +54,7 @@
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="13" fill="1" visible="yes" active="no"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
@@ -18738,8 +18738,20 @@ Source: www.kingbright.com</description>
 <wire x1="3.9" y1="-1.8" x2="3.2" y2="-2.5" width="0.127" layer="21"/>
 <text x="-1.27" y="3.81" size="1.27" layer="25">&gt;NAME</text>
 <text x="-1.27" y="-5.08" size="1.27" layer="27">&gt;VALUE</text>
+<polygon width="0.1" layer="21">
+<vertex x="-8" y="0.5"/>
+<vertex x="-5.1" y="0.5"/>
+<vertex x="-5.1" y="-0.5"/>
+<vertex x="-8" y="-0.5"/>
+</polygon>
+<polygon width="0.1" layer="21">
+<vertex x="9.9" y="0.3"/>
+<vertex x="12.3" y="0.3"/>
+<vertex x="12.3" y="-0.3"/>
+<vertex x="9.9" y="-0.3"/>
+</polygon>
 </package>
-<package name="CON_PWR_2PIN4MM@1">
+<package name="CON_PWR_2PIN4MM">
 <description>&lt;b&gt;WAGO SREW CLAMP&lt;/b&gt;</description>
 <text x="-2.505" y="2.57" size="1.27" layer="51" ratio="10">1</text>
 <text x="1.5858" y="2.5192" size="1.27" layer="51" ratio="10">2</text>
@@ -18868,7 +18880,7 @@ grid 2.54 mm</description>
 <gate name="G$1" symbol="CON_2P" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="CON_PWR_2PIN4MM@1">
+<device name="" package="CON_PWR_2PIN4MM">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -19585,7 +19597,7 @@ grid 2.54 mm</description>
 <part name="VD8" library="diode" deviceset="DIODE-" device="SOD80C" value="1N4148"/>
 <part name="VT2" library="transistor" deviceset="*-NPN-" device="TO220V" value="13005"/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
-<part name="R12" library="resistor" deviceset="R-EU_" device="0207/5V" value="15k"/>
+<part name="R12" library="resistor" deviceset="R-EU_" device="0204/7" value="15k"/>
 <part name="VD4" library="diode" deviceset="ZENER-DIODE" device="ZD-10" value="15v"/>
 <part name="C13" library="resistor" deviceset="C-EU" device="050-025X075" value="100n"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
@@ -19674,11 +19686,11 @@ grid 2.54 mm</description>
 <attribute name="NAME" x="130.937" y="154.4574" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="141.097" y="154.4574" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R19" gate="G$1" x="210.82" y="129.54" smashed="yes" rot="R90">
-<attribute name="NAME" x="209.55" y="128.0414" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="209.55" y="125.222" size="1.778" layer="96" rot="R180"/>
+<instance part="R19" gate="G$1" x="210.82" y="119.38" smashed="yes" rot="R90">
+<attribute name="NAME" x="209.55" y="117.8814" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="209.55" y="115.062" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C19" gate="G$1" x="210.82" y="119.38" rot="MR0"/>
+<instance part="C19" gate="G$1" x="210.82" y="132.08" rot="MR0"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="175.26" y="0"/>
 <instance part="VD9" gate="G$1" x="210.82" y="106.68" smashed="yes" rot="R90">
@@ -20082,22 +20094,15 @@ grid 2.54 mm</description>
 <junction x="116.84" y="149.86"/>
 </segment>
 </net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="R19" gate="G$1" pin="1"/>
-<pinref part="C19" gate="G$1" pin="1"/>
-<wire x1="210.82" y1="124.46" x2="210.82" y2="121.92" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="VD9" gate="G$1" pin="C"/>
-<pinref part="C19" gate="G$1" pin="2"/>
 <wire x1="210.82" y1="109.22" x2="210.82" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="111.76" x2="210.82" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="111.76" x2="218.44" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="HL1" gate="G$1" pin="A"/>
 <wire x1="218.44" y1="111.76" x2="218.44" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="R19" gate="G$1" pin="1"/>
+<wire x1="210.82" y1="114.3" x2="210.82" y2="111.76" width="0.1524" layer="91"/>
 <junction x="210.82" y="111.76"/>
 </segment>
 </net>
@@ -20405,10 +20410,7 @@ grid 2.54 mm</description>
 <pinref part="VT6" gate="G$1" pin="D"/>
 <wire x1="200.66" y1="121.92" x2="200.66" y2="124.46" width="0.1524" layer="91"/>
 <junction x="200.66" y="124.46"/>
-<pinref part="R19" gate="G$1" pin="2"/>
-<wire x1="210.82" y1="134.62" x2="210.82" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="137.16" x2="210.82" y2="137.16" width="0.1524" layer="91"/>
-<junction x="210.82" y="137.16"/>
 <wire x1="210.82" y1="137.16" x2="205.74" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="134.62" x2="205.74" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="VT5" gate="G$1" pin="S"/>
@@ -20429,6 +20431,9 @@ grid 2.54 mm</description>
 <wire x1="147.32" y1="127" x2="157.48" y2="127" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="127" x2="157.48" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="1"/>
+<pinref part="C19" gate="G$1" pin="1"/>
+<wire x1="210.82" y1="134.62" x2="210.82" y2="137.16" width="0.1524" layer="91"/>
+<junction x="210.82" y="137.16"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -20600,6 +20605,13 @@ grid 2.54 mm</description>
 <pinref part="SJ2" gate="1" pin="2"/>
 <wire x1="40.64" y1="40.64" x2="45.72" y2="40.64" width="0.1524" layer="91"/>
 <label x="40.64" y="40.64" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="R19" gate="G$1" pin="2"/>
+<pinref part="C19" gate="G$1" pin="2"/>
+<wire x1="210.82" y1="124.46" x2="210.82" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
