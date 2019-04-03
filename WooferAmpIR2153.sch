@@ -18539,14 +18539,22 @@ grid 2.54 mm</description>
 <text x="-9.8025" y="-3.8575" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="C_11X3.5">
-<wire x1="-5.5" y1="1.75" x2="5.5" y2="1.75" width="0.127" layer="21"/>
+<wire x1="-5.5" y1="1.75" x2="-4.5" y2="1.75" width="0.127" layer="21"/>
 <wire x1="5.5" y1="1.75" x2="5.5" y2="-1.75" width="0.127" layer="21"/>
-<wire x1="5.5" y1="-1.75" x2="-5.5" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="-1.75" x2="-5.5" y2="-1.75" width="0.127" layer="21"/>
 <wire x1="-5.5" y1="-1.75" x2="-5.5" y2="1.75" width="0.127" layer="21"/>
-<pad name="1" x="-5.5375" y="0" drill="0.8" diameter="2.2"/>
-<pad name="2" x="5.5375" y="0" drill="0.8" diameter="2.2"/>
-<text x="-4.0525" y="0.2225" size="1.27" layer="25">&gt;NAME</text>
-<text x="-4.3025" y="-1.6075" size="1.27" layer="27">&gt;VALUE</text>
+<pad name="1" x="-4.5375" y="0" drill="0.8" diameter="2.2"/>
+<pad name="2" x="4.5375" y="0" drill="0.8" diameter="2.2"/>
+<text x="-3.6525" y="0.1225" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.6025" y="-1.3075" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="4.5" y1="1.75" x2="4.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="4.5" y1="-1.5" x2="4.5" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="1.5" x2="4.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="-1.5" x2="4.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="-1.5" x2="-4.5" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="1.5" x2="-4.5" y2="1.75" width="0.127" layer="21"/>
+<wire x1="5.5" y1="1.75" x2="4.5" y2="1.75" width="0.127" layer="21"/>
+<wire x1="5.5" y1="-1.75" x2="4.5" y2="-1.75" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -20420,7 +20428,7 @@ grid 5.08 mm</description>
 <sheet>
 <plain>
 <text x="45.72" y="101.6" size="1.778" layer="91">33k</text>
-<text x="30.48" y="99.06" size="1.778" layer="91">3k3</text>
+<text x="30.48" y="106.68" size="1.778" layer="91">3k3</text>
 <text x="10.16" y="15.24" size="1.778" layer="91">Для  8  установить SJ1 SJ2 S3
 Для 16 удалить установить SJ4</text>
 <wire x1="215.9" y1="137.16" x2="218.44" y2="137.16" width="0.254" layer="94" curve="-180"/>
@@ -20529,10 +20537,10 @@ grid 5.08 mm</description>
 <attribute name="NAME" x="44.45" y="108.1786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="44.45" y="105.918" size="1.778" layer="96"/>
 </instance>
-<instance part="C4" gate="C$" x="35.56" y="99.06"/>
+<instance part="C4" gate="C$" x="35.56" y="99.06" rot="MR0"/>
 <instance part="R4" gate="G$1" x="35.56" y="109.22" smashed="yes" rot="R90">
-<attribute name="NAME" x="34.29" y="117.8814" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="34.29" y="115.062" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="34.29" y="115.3414" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="34.29" y="112.522" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R3" gate="G$1" x="27.94" y="109.22" smashed="yes" rot="R90">
 <attribute name="NAME" x="21.59" y="108.1786" size="1.778" layer="95"/>
