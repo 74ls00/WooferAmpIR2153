@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -167,6 +167,14 @@
 <wire x1="-4" y1="4" x2="4" y2="4" width="0.127" layer="21"/>
 <wire x1="-4" y1="3" x2="4" y2="3" width="0.127" layer="21"/>
 </package>
+<package name="L-D30">
+<circle x="0" y="0" radius="16" width="0.127" layer="21"/>
+<pad name="D" x="0" y="0" drill="2"/>
+<pad name="1B" x="-12.7" y="0" drill="2"/>
+<pad name="1A" x="-18.665" y="2.54" drill="2"/>
+<pad name="2B" x="12.76" y="0" drill="2"/>
+<pad name="2A" x="16.7" y="-5.08" drill="2"/>
+</package>
 </packages>
 <symbols>
 <symbol name="PIN">
@@ -183,6 +191,10 @@
 <text x="-2.54" y="3.302" size="1.778" layer="95">&gt;NAME</text>
 <pin name="1" x="7.62" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="2" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+<symbol name="L-D30">
+<wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.254" layer="94" curve="-180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -210,6 +222,30 @@
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="L-D30">
+<gates>
+<gate name="G$1" symbol="L-D30" x="0" y="0"/>
+<gate name="G$2" symbol="PIN" x="0" y="-2.54"/>
+<gate name="G$3" symbol="PIN" x="0" y="-5.08"/>
+<gate name="G$4" symbol="PIN" x="0" y="-7.62"/>
+<gate name="G$5" symbol="PIN" x="0" y="-10.16"/>
+<gate name="G$6" symbol="PIN" x="0" y="-12.7"/>
+</gates>
+<devices>
+<device name="" package="L-D30">
+<connects>
+<connect gate="G$2" pin="1" pad="1A"/>
+<connect gate="G$3" pin="1" pad="1B"/>
+<connect gate="G$4" pin="1" pad="2A"/>
+<connect gate="G$5" pin="1" pad="2B"/>
+<connect gate="G$6" pin="1" pad="D"/>
 </connects>
 <technologies>
 <technology name=""/>
