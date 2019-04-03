@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -19585,7 +19585,7 @@ grid 2.54 mm</description>
 <part name="VD8" library="diode" deviceset="DIODE-" device="SOD80C" value="1N4148"/>
 <part name="VT2" library="transistor" deviceset="*-NPN-" device="TO220V" value="13005"/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
-<part name="R12" library="resistor" deviceset="R-EU_" device="0204/7" value="15k"/>
+<part name="R12" library="resistor" deviceset="R-EU_" device="0207/5V" value="15k"/>
 <part name="VD4" library="diode" deviceset="ZENER-DIODE" device="ZD-10" value="15v"/>
 <part name="C13" library="resistor" deviceset="C-EU" device="050-025X075" value="100n"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
