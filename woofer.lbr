@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="6.25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -160,6 +160,22 @@
 <wire x1="-4" y1="4" x2="-4" y2="3" width="0.127" layer="21"/>
 <pad name="1" x="-2" y="0" drill="1.6" shape="offset" rot="R90"/>
 <pad name="2" x="2" y="0" drill="1.6" shape="offset" rot="R90"/>
+<wire x1="-4" y1="3" x2="-4" y2="-5" width="0.127" layer="21"/>
+<wire x1="4" y1="-5" x2="4" y2="3" width="0.127" layer="21"/>
+<wire x1="4" y1="3" x2="4" y2="4" width="0.127" layer="21"/>
+<wire x1="-4" y1="-5" x2="4" y2="-5" width="0.127" layer="21"/>
+<wire x1="-4" y1="4" x2="4" y2="4" width="0.127" layer="21"/>
+<wire x1="-4" y1="3" x2="4" y2="3" width="0.127" layer="21"/>
+</package>
+<package name="CON_PWRI_2PIN4MM">
+<description>&lt;b&gt;WAGO SREW CLAMP&lt;/b&gt;</description>
+<text x="-2.505" y="2.57" size="1.27" layer="51" ratio="10">1</text>
+<text x="1.5858" y="2.5192" size="1.27" layer="51" ratio="10">2</text>
+<text x="-3.51" y="-4.085" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-3.11" y="-6.818" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<wire x1="-4" y1="4" x2="-4" y2="3" width="0.127" layer="21"/>
+<pad name="1" x="-1.81" y="0" drill="1.6" shape="offset" rot="R270"/>
+<pad name="2" x="1.81" y="0" drill="1.6" shape="offset" rot="R270"/>
 <wire x1="-4" y1="3" x2="-4" y2="-5" width="0.127" layer="21"/>
 <wire x1="4" y1="-5" x2="4" y2="3" width="0.127" layer="21"/>
 <wire x1="4" y1="3" x2="4" y2="4" width="0.127" layer="21"/>
@@ -1183,7 +1199,16 @@ grid 5.08 mm</description>
 <gate name="G$1" symbol="CON_2P" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="CON_PWR_2PIN4MM">
+<device name="A" package="CON_PWR_2PIN4MM">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="B" package="CON_PWRI_2PIN4MM">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
