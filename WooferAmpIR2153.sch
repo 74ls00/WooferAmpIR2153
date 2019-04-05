@@ -18123,22 +18123,6 @@ grid 2.54 mm</description>
 <package name="PIN-L">
 <pad name="P$1" x="0" y="0" drill="2" diameter="6.4516" rot="R180"/>
 </package>
-<package name="CON_PWRI_2PIN4MM">
-<description>&lt;b&gt;WAGO SREW CLAMP&lt;/b&gt;</description>
-<text x="-2.505" y="2.57" size="1.27" layer="51" ratio="10">1</text>
-<text x="1.5858" y="2.5192" size="1.27" layer="51" ratio="10">2</text>
-<text x="-3.51" y="-4.085" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-3.11" y="-6.818" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<wire x1="-4" y1="4" x2="-4" y2="3" width="0.127" layer="21"/>
-<pad name="1" x="-1.81" y="0" drill="1.6" shape="offset" rot="R270"/>
-<pad name="2" x="1.81" y="0" drill="1.6" shape="offset" rot="R270"/>
-<wire x1="-4" y1="3" x2="-4" y2="-5" width="0.127" layer="21"/>
-<wire x1="4" y1="-5" x2="4" y2="3" width="0.127" layer="21"/>
-<wire x1="4" y1="3" x2="4" y2="4" width="0.127" layer="21"/>
-<wire x1="-4" y1="-5" x2="4" y2="-5" width="0.127" layer="21"/>
-<wire x1="-4" y1="4" x2="4" y2="4" width="0.127" layer="21"/>
-<wire x1="-4" y1="3" x2="4" y2="3" width="0.127" layer="21"/>
-</package>
 <package name="CON_PWR_2PIN4MM">
 <description>&lt;b&gt;WAGO SREW CLAMP&lt;/b&gt;</description>
 <text x="-2.505" y="2.57" size="1.27" layer="51" ratio="10">1</text>
@@ -18146,8 +18130,8 @@ grid 2.54 mm</description>
 <text x="-3.51" y="-4.085" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <text x="-3.11" y="-6.818" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <wire x1="-4" y1="4" x2="-4" y2="3" width="0.127" layer="21"/>
-<pad name="1" x="-2" y="0" drill="1.6" shape="offset" rot="R90"/>
-<pad name="2" x="2" y="0" drill="1.6" shape="offset" rot="R90"/>
+<pad name="1" x="-2" y="0" drill="1.5" diameter="3" shape="offset" rot="R90"/>
+<pad name="2" x="2" y="0" drill="1.5" diameter="3" shape="offset" rot="R90"/>
 <wire x1="-4" y1="3" x2="-4" y2="-5" width="0.127" layer="21"/>
 <wire x1="4" y1="-5" x2="4" y2="3" width="0.127" layer="21"/>
 <wire x1="4" y1="3" x2="4" y2="4" width="0.127" layer="21"/>
@@ -18162,6 +18146,22 @@ grid 2.54 mm</description>
 <pad name="1A" x="-18.665" y="2.54" drill="2"/>
 <pad name="2B" x="12.76" y="0" drill="2"/>
 <pad name="2A" x="16.7" y="-5.08" drill="2"/>
+</package>
+<package name="CON_PWRI_2PIN4MM">
+<description>&lt;b&gt;WAGO SREW CLAMP&lt;/b&gt;</description>
+<text x="-2.505" y="2.57" size="1.27" layer="51" ratio="10">1</text>
+<text x="1.5858" y="2.5192" size="1.27" layer="51" ratio="10">2</text>
+<text x="-3.51" y="-4.085" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-3.11" y="-6.818" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<wire x1="-4" y1="4" x2="-4" y2="3" width="0.127" layer="21"/>
+<pad name="1" x="-1.81" y="0" drill="1.6" diameter="3" shape="offset" rot="R270"/>
+<pad name="2" x="1.81" y="0" drill="1.6" diameter="3" shape="offset" rot="R270"/>
+<wire x1="-4" y1="3" x2="-4" y2="-5" width="0.127" layer="21"/>
+<wire x1="4" y1="-5" x2="4" y2="3" width="0.127" layer="21"/>
+<wire x1="4" y1="3" x2="4" y2="4" width="0.127" layer="21"/>
+<wire x1="-4" y1="-5" x2="4" y2="-5" width="0.127" layer="21"/>
+<wire x1="-4" y1="4" x2="4" y2="4" width="0.127" layer="21"/>
+<wire x1="-4" y1="3" x2="4" y2="3" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -18551,12 +18551,12 @@ BD138    ECB</description>
 <part name="R7" library="resistor" deviceset="R-EU_" device="0613/15" value="2k2 1w"/>
 <part name="R5" library="resistor" deviceset="R-EU_" device="M1206" value="68k"/>
 <part name="C4" library="C" deviceset="C" device="11X3.5" value="100"/>
-<part name="R4" library="resistor" deviceset="R-EU_" device="M1206" value="6k8"/>
+<part name="R4" library="resistor" deviceset="R-EU_" device="M0805" value="6k8"/>
 <part name="R3" library="resistor" deviceset="R-EU_" device="M0805" value="1k"/>
 <part name="R2" library="resistor" deviceset="R-EU_" device="0207/10" value="1k"/>
 <part name="R1" library="resistor" deviceset="R-EU_" device="0207/10" value="33k"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="C2" library="resistor" deviceset="C-EU" device="025-030X050" value="220n"/>
+<part name="C2" library="resistor" deviceset="C-EU" device="050-025X075" value="220n"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="VD1" library="DSS0" deviceset="ZD" device="D814" value="Д814В"/>
@@ -18566,7 +18566,7 @@ BD138    ECB</description>
 <part name="C8" library="resistor" deviceset="CPOL-EU" device="E2.5-6" value="10m"/>
 <part name="C7" library="resistor" deviceset="C-EU" device="050-025X075" value="100n"/>
 <part name="R8" library="resistor" deviceset="R-EU_" device="M0805" value="4k7"/>
-<part name="IN" library="woofer" deviceset="CON_2P" device="B" value=""/>
+<part name="IN" library="woofer" deviceset="CON_2P" device="B" value="CON_2PB"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="C16" library="resistor" deviceset="CPOL-EU" device="E7.5-18" value="1000m50v"/>
@@ -18587,7 +18587,7 @@ BD138    ECB</description>
 <part name="VD8" library="diode" deviceset="DIODE-" device="SOD80C" value="LL4148"/>
 <part name="VT2" library="m_transistor" deviceset="BJT_NPN" device="_TO220_V_BCE" value="13005"/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
-<part name="R12" library="resistor" deviceset="R-EU_" device="0204/7" value="15k"/>
+<part name="R12" library="resistor" deviceset="R-EU_" device="0207/10" value="15k"/>
 <part name="C13" library="resistor" deviceset="C-EU" device="050-025X075" value="100n"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="C1" library="resistor" deviceset="CPOL-EU" device="E2.5-6" value="10m"/>
