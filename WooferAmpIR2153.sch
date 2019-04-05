@@ -18347,9 +18347,6 @@ grid 5.08 mm</description>
 <pad name="3" x="2.6035" y="-1.27" drill="1.016" shape="long" rot="R90"/>
 <text x="-3.9624" y="-4.5466" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-3.9878" y="-6.3246" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-2.54" y="-1.905" size="1.27" layer="51" ratio="10">1</text>
-<text x="-0.381" y="-1.905" size="1.27" layer="51" ratio="10">2</text>
-<text x="2.032" y="-1.905" size="1.27" layer="51" ratio="10">3</text>
 <rectangle x1="-3.937" y1="-0.381" x2="-3.175" y2="0" layer="21"/>
 <rectangle x1="-1.397" y1="-0.381" x2="-0.889" y2="0" layer="21"/>
 <rectangle x1="0.889" y1="-0.381" x2="1.397" y2="0" layer="21"/>
