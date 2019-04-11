@@ -156,33 +156,6 @@
 <dimension x1="-0.635" y1="-4.1275" x2="141.605" y2="-3.4925" x3="70.485" y3="-9.8425" layer="47" dtype="horizontal"/>
 </plain>
 <libraries>
-<library name="transistor">
-<description>&lt;b&gt;Transistors&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="TO92-CBE">
-<description>&lt;b&gt;TO-92&lt;/b&gt; Pads In Line  C B E from top&lt;p&gt;</description>
-<wire x1="-2.095" y1="-1.651" x2="2.095" y2="-1.651" width="0.127" layer="21"/>
-<wire x1="-2.413" y1="1.1359" x2="2.413" y2="1.1359" width="0.127" layer="21" curve="-129.583"/>
-<wire x1="1.136" y1="-0.127" x2="-1.136" y2="-0.127" width="0.127" layer="51"/>
-<wire x1="-2.413" y1="1.1359" x2="-2.664" y2="-0.127" width="0.127" layer="51" curve="27.9376"/>
-<wire x1="-2.664" y1="-0.127" x2="-2.413" y2="-1.1359" width="0.127" layer="51" curve="22.4788"/>
-<wire x1="-1.404" y1="-0.127" x2="-2.664" y2="-0.127" width="0.127" layer="51"/>
-<wire x1="-2.4135" y1="-1.1359" x2="-2.095" y2="-1.651" width="0.127" layer="21" curve="13.0385"/>
-<wire x1="-1.136" y1="-0.127" x2="-1.404" y2="-0.127" width="0.127" layer="21"/>
-<wire x1="2.413" y1="-1.1359" x2="2.664" y2="-0.127" width="0.127" layer="51" curve="22.4788"/>
-<wire x1="2.664" y1="-0.127" x2="2.413" y2="1.1359" width="0.127" layer="51" curve="27.9376"/>
-<wire x1="2.664" y1="-0.127" x2="1.404" y2="-0.127" width="0.127" layer="51"/>
-<wire x1="1.404" y1="-0.127" x2="1.136" y2="-0.127" width="0.127" layer="21"/>
-<wire x1="2.095" y1="-1.651" x2="2.4247" y2="-1.1118" width="0.127" layer="21" curve="13.6094"/>
-<pad name="C" x="-2.54" y="0" drill="0.8128" shape="long" rot="R90"/>
-<pad name="E" x="2.54" y="0" drill="0.8128" shape="long" rot="R90"/>
-<pad name="B" x="0" y="0" drill="0.8128" shape="long" rot="R90"/>
-<text x="-2.54" y="3.048" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.54" y="-3.302" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-</packages>
-</library>
 <library name="resistor">
 <description>&lt;b&gt;Resistors, Capacitors, Inductors&lt;/b&gt;&lt;p&gt;
 Based on the previous libraries:
@@ -1861,6 +1834,26 @@ grid 2.54 mm</description>
 <rectangle x1="-0.889" y1="-0.381" x2="0.889" y2="0" layer="51"/>
 <rectangle x1="1.397" y1="-0.381" x2="3.175" y2="0" layer="51"/>
 </package>
+<package name="TO92">
+<description>&lt;b&gt;TO-92&lt;/b&gt;&lt;p&gt;
+grid 5.08 mm</description>
+<wire x1="-2.095" y1="-2.921" x2="2.095" y2="-2.921" width="0.127" layer="21"/>
+<wire x1="-2.413" y1="-0.1341" x2="2.413" y2="-0.1341" width="0.127" layer="21" curve="-129.583"/>
+<wire x1="1.136" y1="-1.397" x2="-1.136" y2="-1.397" width="0.127" layer="51"/>
+<wire x1="-2.413" y1="-0.1341" x2="-2.413" y2="-2.4059" width="0.127" layer="51" curve="50.4167"/>
+<wire x1="-1.404" y1="-1.397" x2="-2.664" y2="-1.397" width="0.127" layer="51"/>
+<wire x1="-2.4135" y1="-2.4059" x2="-2.095" y2="-2.921" width="0.127" layer="21" curve="13.0385"/>
+<wire x1="-1.136" y1="-1.397" x2="-1.404" y2="-1.397" width="0.127" layer="21"/>
+<wire x1="2.413" y1="-2.4059" x2="2.413" y2="-0.1341" width="0.127" layer="51" curve="50.4167"/>
+<wire x1="2.664" y1="-1.397" x2="1.404" y2="-1.397" width="0.127" layer="51"/>
+<wire x1="1.404" y1="-1.397" x2="1.136" y2="-1.397" width="0.127" layer="21"/>
+<wire x1="2.095" y1="-2.921" x2="2.4247" y2="-2.3818" width="0.127" layer="21" curve="13.6094"/>
+<pad name="1" x="-2.54" y="-1.27" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="2.54" y="-1.27" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="0" y="-1.27" drill="0.8128" shape="long" rot="R90"/>
+<text x="-2.54" y="1.778" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-4.572" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 </library>
 </libraries>
@@ -2072,9 +2065,9 @@ grid 2.54 mm</description>
 </pass>
 </autorouter>
 <elements>
-<element name="VT1" library="transistor" package="TO92-CBE" value="2N5401" x="26.3525" y="15.875" smashed="yes" rot="R180">
-<attribute name="NAME" x="26.51125" y="20.7645" size="1.27" layer="25" ratio="10" rot="R180"/>
-<attribute name="VALUE" x="23.1775" y="17.9705" size="1.27" layer="27" ratio="10"/>
+<element name="VT1" library="m_transistor" package="TO92" value="2N5401" x="26.3525" y="17.145" smashed="yes">
+<attribute name="NAME" x="25.87625" y="20.5105" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="29.5275" y="15.0495" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="C10" library="resistor" package="C075-032X103" value="750" x="35.2425" y="4.7625" smashed="yes">
 <attribute name="NAME" x="34.9885" y="0.0635" size="1.27" layer="25" ratio="10" rot="R180"/>
@@ -2086,7 +2079,7 @@ grid 2.54 mm</description>
 </element>
 <element name="R11" library="resistor" package="M0805" value="750" x="31.115" y="17.4625" smashed="yes" rot="MR270">
 <attribute name="NAME" x="26.63825" y="18.95475" size="1.27" layer="26" ratio="10" rot="MR180"/>
-<attribute name="VALUE" x="26.0731" y="17.78" size="1.27" layer="28" ratio="10" rot="MR0"/>
+<attribute name="VALUE" x="26.0731" y="18.0975" size="1.27" layer="28" ratio="10" rot="MR0"/>
 </element>
 <element name="C11" library="resistor" package="C050-025X075" value="100n" x="35.8775" y="23.8125" smashed="yes">
 <attribute name="NAME" x="33.5915" y="26.924" size="1.27" layer="25" ratio="10"/>
@@ -2451,7 +2444,7 @@ grid 2.54 mm</description>
 <contactref element="C15" pad="2"/>
 <contactref element="C17" pad="2"/>
 <contactref element="VT2" pad="2"/>
-<contactref element="VT1" pad="B"/>
+<contactref element="VT1" pad="2"/>
 <contactref element="R12" pad="1"/>
 <contactref element="C3" pad="1"/>
 <contactref element="IN" pad="2"/>
@@ -2687,7 +2680,7 @@ grid 2.54 mm</description>
 <wire x1="55.21625" y1="31.90875" x2="55.6925" y2="33.02" width="1.016" layer="16"/>
 </signal>
 <signal name="N$50">
-<contactref element="VT1" pad="C"/>
+<contactref element="VT1" pad="3"/>
 <contactref element="R9" pad="1"/>
 <contactref element="C9" pad="-"/>
 <wire x1="30.1625" y1="12.065" x2="30.1625" y2="12.3825" width="1.016" layer="16"/>
@@ -2975,7 +2968,7 @@ grid 2.54 mm</description>
 <signal name="CO">
 <contactref element="R8" pad="1"/>
 <contactref element="SJ3" pad="2"/>
-<contactref element="VT1" pad="E"/>
+<contactref element="VT1" pad="1"/>
 <contactref element="DA1" pad="9"/>
 <wire x1="20.6375" y1="15.24" x2="23.8125" y2="15.875" width="1.016" layer="16"/>
 <wire x1="25.05075" y1="22.70125" x2="25.05075" y2="24.79675" width="0.8128" layer="16"/>
